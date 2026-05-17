@@ -50,7 +50,7 @@ const ScanningLine: React.FC<{ active: boolean }> = ({ active }) => (
 const ContactSection: React.FC<ContactSectionProps> = ({ isActive, language }) => {
   const data = contactData[language];
   const [isLoaded, setIsLoaded] = useState(false);
-  const backgroundImage = 'https://storage.googleapis.com/mmmedia-assets/contact1-bg.webp';
+  const backgroundImage = '/contact1-bg.webp';
 
   useEffect(() => {
     const img = new Image();

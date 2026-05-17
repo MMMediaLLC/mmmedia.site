@@ -30,14 +30,14 @@ export const sections: Record<Language, SectionData[]> = {
       content: "Медијален и технолошки партнер за одржлив дигитален раст. Градиме решенија што инспирираат и трајаат.",
       showButton: true,
       buttonText: 'Започни проект',
-      backgroundImage: 'https://storage.googleapis.com/mmmedia-assets/Slide%201.jpg'
+      backgroundImage: '/slide-1.jpg'
     },
     {
       id: 'about',
       subtitle: <SectionBadge label="IDENTITY_ENGINE" />,
       title: 'За нас',
       content: 'М&М медиа е медијална и дигитална компанија базирана во Гостивар, активна од 2016 година. Управуваме со сопствени вестински платформи и развиваме дигитални, технолошки и AI решенија.',
-      backgroundImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea4d58f?auto=format&fit=crop&w=1920&q=80'
+      backgroundImage: '/slide-2.webp'
     },
     {
       id: 'expertise',
@@ -69,12 +69,12 @@ export const sections: Record<Language, SectionData[]> = {
           description: "Професионални фото-есеи и документарна фотографија, вклучувајќи работа во комплексни и осетливи окружувања."
         }
       ],
-      backgroundImage: 'https://images.unsplash.com/photo-1557768633-15bb62ab2d0c?auto=format&fit=crop&w=1920&q=80'
+      backgroundImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80'
     },
     {
       id: 'contact',
       title: 'Контакт',
-      backgroundImage: 'https://storage.googleapis.com/mmmedia-assets/contact1-bg.webp'
+      backgroundImage: '/contact1-bg.webp'
     },
   ],
   en: [
@@ -85,14 +85,14 @@ export const sections: Record<Language, SectionData[]> = {
       content: "Media and technology partner for sustainable digital growth. We build solutions that inspire and last.",
       showButton: true,
       buttonText: 'Start project',
-      backgroundImage: 'https://storage.googleapis.com/mmmedia-assets/Slide%201.jpg'
+      backgroundImage: '/slide-1.jpg'
     },
     {
       id: 'about',
       subtitle: <SectionBadge label="IDENTITY_ENGINE" />,
       title: 'About Us',
       content: 'M&M Media is a media and digital company based in Gostivar, active since 2016. We manage our own news platforms and develop digital, technology, and AI solutions.',
-      backgroundImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea4d58f?auto=format&fit=crop&w=1920&q=80'
+      backgroundImage: '/slide-2.webp'
     },
     {
       id: 'expertise',
@@ -124,12 +124,12 @@ export const sections: Record<Language, SectionData[]> = {
           description: "Professional photo-essays and documentary photography, including work in complex and sensitive environments."
         }
       ],
-      backgroundImage: 'https://images.unsplash.com/photo-1557768633-15bb62ab2d0c?auto=format&fit=crop&w=1920&q=80'
+      backgroundImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80'
     },
     {
       id: 'contact',
       title: 'Contact',
-      backgroundImage: 'https://storage.googleapis.com/mmmedia-assets/contact1-bg.webp'
+      backgroundImage: '/contact1-bg.webp'
     },
   ]
 };
