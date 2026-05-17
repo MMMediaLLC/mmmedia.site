@@ -1,6 +1,6 @@
 import React from 'react';
 import { SectionBadge } from '../components/Section';
-import { Radio, Newspaper, Sparkles, Code2, Camera, LucideIcon } from "lucide-react";
+import { Radio, Newspaper, Sparkles, Code2, Camera, Crosshair, LucideIcon } from "lucide-react";
 
 export type Language = 'mk' | 'en';
 
@@ -67,6 +67,11 @@ export const sections: Record<Language, SectionData[]> = {
           title: "Фотографија",
           icon: Camera,
           description: "Професионални фото-есеи и документарна фотографија, вклучувајќи работа во комплексни и осетливи окружувања."
+        },
+        {
+          title: "FPV Дрон Операции",
+          icon: Crosshair,
+          description: "Напредни FPV дрон услуги за fly-through снимки, воздушни инспекции, поддршка при пребарување и спасување, безбедносен надзор и новинарска документација."
         }
       ],
       backgroundImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80'
@@ -122,6 +127,11 @@ export const sections: Record<Language, SectionData[]> = {
           title: "Photography",
           icon: Camera,
           description: "Professional photo-essays and documentary photography, including work in complex and sensitive environments."
+        },
+        {
+          title: "FPV Drone Operations",
+          icon: Crosshair,
+          description: "Advanced FPV drone services for fly-through footage, aerial inspections, search & rescue support, security surveillance, and journalistic documentation."
         }
       ],
       backgroundImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80'
