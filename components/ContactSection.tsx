@@ -20,7 +20,7 @@ const contactData = {
   },
   en: {
     title: "Contact",
-    subtitle: "Ready for the next chapter? We are here to turn your ideas into digital reality.",
+    subtitle: "Have an idea, platform, or digital project? We help turn ideas into functional and sustainable digital solutions.",
     button: "Send message",
     info: {
       email: "contact@mmmedia.site"

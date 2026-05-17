@@ -96,7 +96,7 @@ export const sections: Record<Language, SectionData[]> = {
       id: 'about',
       subtitle: <SectionBadge label="IDENTITY_ENGINE" />,
       title: 'About Us',
-      content: 'M&M Media is a media and digital company based in Gostivar, active since 2016. We manage our own news platforms and develop digital, technology, and AI solutions.',
+      content: 'M&M Media is a media and digital company active since 2016. We manage our own news platforms and develop web, technology, and AI solutions for media, businesses, and organizations.',
       backgroundImage: '/slide-2.webp'
     },
     {
@@ -106,32 +106,32 @@ export const sections: Record<Language, SectionData[]> = {
         {
           title: "Media",
           icon: Radio,
-          description: "Public information based on credibility and public interest, with mass reach and efficient content distribution through digital platforms and media channels."
+          description: "Public information based on credibility, public interest, and efficient mass distribution of content through digital platforms and media channels."
         },
         {
           title: "Journalism",
           icon: Newspaper,
-          description: "Professional and responsible reporting based on verified information, fighting disinformation, strengthening public accountability, and conducting training for journalism and digital literacy."
+          description: "Professional and responsible reporting based on fact-checking, combating disinformation, and training in journalism, media, and digital literacy."
         },
         {
           title: "AI Solutions",
           icon: Sparkles,
-          description: "Implementation of advanced technologies based on artificial intelligence and development of practical AI tools for companies and businesses, aimed at automation, optimization, and increasing productivity."
+          description: "Development and implementation of practical AI-based tools for automation, process optimization, and increased productivity for companies and organizations."
         },
         {
           title: "Web Development",
           icon: Code2,
-          description: "Development of functional, scalable, and sustainable web platforms and media systems, tailored to real business, informational, and communication needs."
+          description: "Development of functional, scalable, and sustainable web platforms, media systems, and digital solutions tailored to real needs."
         },
         {
           title: "Photography",
           icon: Camera,
-          description: "Professional photo-essays and documentary photography, including work in complex and sensitive environments."
+          description: "Professional photo reports and documentary photography, including work in complex and sensitive environments."
         },
         {
           title: "FPV Drone Operations",
           icon: Crosshair,
-          description: "Advanced FPV drone services for fly-through footage, aerial inspections, search & rescue support, security surveillance, and journalistic documentation."
+          description: "Advanced FPV drone services for fly-through footage, aerial inspections, search and rescue support, security surveillance, and journalistic documentation."
         }
       ],
       backgroundImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80'
