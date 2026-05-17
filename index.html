@@ -4,119 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
     <title>M&M Media | Digital & Technology Partner</title>
-    <meta name="description" content="M&M Media - Медиумски и технолошки партнер за одржлив дигитален развој од 2016 година.">
+    <meta name="description" content="M&M Media - Македонија дигиталне и технологије партнер за вас у целој земљи са првиот дигиталан портал од 2016 година.">
     <meta name="keywords" content="M&M Media, Gostivar, Digital Media, AI solutions, Web Development, Journalism">
-    
-    <!-- Open Graph / Facebook -->
+    <link rel="canonical" href="https://mmmedia.site/">
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mmmedia.mk/">
+    <meta property="og:url" content="https://mmmedia.site/">
     <meta property="og:title" content="M&M Media | Digital Excellence">
     <meta property="og:description" content="Media and technology partner for sustainable digital growth.">
     <meta property="og:image" content="https://storage.googleapis.com/mmmedia-assets/Slide%201.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.unsplash.com">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Inter:wght@100..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-      :root {
-        --primary: #3b82f6;
-        --surface: #020202;
-        --accent: #60a5fa;
-      }
-      
-      * {
-        -webkit-tap-highlight-color: transparent;
-        box-sizing: border-box;
-        cursor: default;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: var(--surface);
-        color: #ffffff;
-        overflow: hidden;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        touch-action: pan-y; 
-      }
-
-      h1, h2, h3, .heading-font {
-        font-family: 'Sora', 'Inter', sans-serif;
-        letter-spacing: -0.05em;
-        line-height: 0.85;
-      }
-
-      .mono-font {
-        font-family: 'JetBrains Mono', monospace;
-      }
-
-      .no-scrollbar::-webkit-scrollbar { display: none; }
-      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-      
-      .snap-container {
-        scroll-snap-type: y mandatory;
-        height: 100dvh;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .snap-child {
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-        height: 100dvh;
-        width: 100%;
-        position: relative;
-        flex-shrink: 0;
-      }
-
-      @media (max-width: 640px) {
-        h1 { font-size: 2.5rem !important; }
-        .snap-container {
-          scroll-snap-type: y mandatory !important;
-        }
-      }
-    </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: { DEFAULT: '#3b82f6', dark: '#1d4ed8' },
-              surface: '#020202',
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              heading: ['Sora', 'Inter', 'sans-serif'],
-              mono: ['JetBrains Mono', 'monospace'],
-            },
-          },
-        },
-      }
-    </script>
-    <script type="importmap">
-    {
-      "imports": {
-        "react": "https://esm.sh/react@^19.2.3",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-        "react/": "https://esm.sh/react@^19.2.3/",
-        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-        "framer-motion": "https://esm.sh/framer-motion@^12.29.0"
-      }
-    }
-    </script>
-  <link rel="stylesheet" href="/index.css">
-</head>
+    <link rel="preconnect" href="https://storage.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;800&family=Inter:wght@100;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>

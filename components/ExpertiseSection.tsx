@@ -23,14 +23,14 @@ const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ isActive, title, it
   }, [backgroundImage]);
 
   return (
-    <section 
-      id="expertise" 
+    <section
+      id="expertise"
       className="relative h-[100dvh] w-full snap-child flex flex-col justify-center overflow-hidden bg-[#020202]"
     >
       <div className="absolute inset-0 z-0">
         <AnimatePresence>
           {isLoaded && backgroundImage && isActive && (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.2 }}
               exit={{ opacity: 0 }}
@@ -41,7 +41,7 @@ const ExpertiseSection: React.FC<ExpertiseSectionProps> = ({ isActive, title, it
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-[#020202] via-[#020202]/80 to-[#020202] z-[2]" />
       </div>
-      
+
       <div className="relative z-10 px-4 md:px-12 lg:px-20 max-w-6xl w-full mx-auto flex flex-col h-full justify-center py-2 md:py-4">
         <motion.div
           initial={{ opacity: 0 }}

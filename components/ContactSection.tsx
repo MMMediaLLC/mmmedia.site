@@ -12,18 +12,18 @@ interface ContactSectionProps {
 const contactData = {
   mk: {
     title: "Контакт",
-    subtitle: "Подготвени сте за следното поглавје? Тука сме да ги претвориме вашите идеи во дигитална реалност.",
+    subtitle: "Готов ли сте за следната глава? Ние сме овде да ги превратиме вашите идеи во дигитална реалност. Дали имате добра идеја и волите да ја претворите во успешен производ? Ние сме тука за вас.",
     button: "Испрати порака",
-    info: { 
-      email: "contact@mmmedia.site" 
+    info: {
+      email: "contact@mmmedia.site"
     }
   },
   en: {
     title: "Contact",
     subtitle: "Ready for the next chapter? We are here to turn your ideas into digital reality.",
     button: "Send message",
-    info: { 
-      email: "contact@mmmedia.site" 
+    info: {
+      email: "contact@mmmedia.site"
     }
   }
 };
@@ -34,10 +34,10 @@ const ScanningLine: React.FC<{ active: boolean }> = ({ active }) => (
       <motion.div
         initial={{ top: "-5%" }}
         animate={{ top: "105%" }}
-        transition={{ 
-          duration: 4, 
-          repeat: Infinity, 
-          ease: "linear" 
+        transition={{
+          duration: 4,
+          repeat: Infinity,
+          ease: "linear"
         }}
         className="absolute left-0 right-0 z-[4] pointer-events-none h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent shadow-[0_0_10px_rgba(59,130,246,0.3)]"
       >
@@ -59,14 +59,14 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isActive, language }) =
   }, []);
 
   return (
-    <section 
-      id="contact" 
+    <section
+      id="contact"
       className="relative h-[100dvh] w-full snap-child flex flex-col justify-center overflow-hidden bg-surface"
     >
       <div className="absolute inset-0 z-0 overflow-hidden">
         <AnimatePresence mode="wait">
           {isLoaded && (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={isActive ? { opacity: 0.6 } : { opacity: 0 }}
               exit={{ opacity: 0 }}
@@ -84,7 +84,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isActive, language }) =
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-surface via-surface/40 to-transparent" />
         </div>
       </div>
-      
+
       <div className="relative z-10 px-6 md:px-20 lg:px-32 max-w-7xl w-full mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -94,16 +94,16 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isActive, language }) =
           <div className="mb-2">
             <SectionBadge label="CONTACT_STATION" />
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-heading font-extrabold tracking-[-0.06em] mb-6 md:mb-10 text-white leading-[0.85] flex items-baseline">
             {data.title}<BrandingSeal />
           </h1>
-          
+
           <p className="text-[15px] md:text-lg lg:text-xl text-white/60 max-w-2xl leading-[1.6] mb-8 md:mb-14 font-medium tracking-tight">
             {data.subtitle}
           </p>
 
-          <motion.a 
+          <motion.a
             href={`mailto:${data.info.email}`}
             whileTap={{ scale: 0.98 }}
             className="group bg-primary text-white font-bold py-5 px-10 md:py-6 md:px-16 rounded-xl flex items-center justify-center gap-5 transition-all w-fit cursor-pointer border border-primary/20"
@@ -117,7 +117,6 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isActive, language }) =
       <footer className="absolute bottom-6 left-0 right-0 z-20 px-6 md:px-20 lg:px-32">
         <div className="flex flex-col items-center gap-4 w-full">
           <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-white/[0.12] to-transparent" />
-          
           <div className="opacity-[0.22]">
             <a href={`mailto:${data.info.email}`} className="flex items-center gap-2 hover:opacity-100 transition-opacity">
               <Mail size={8} />

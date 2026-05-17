@@ -23,63 +23,63 @@ export interface SectionData {
 
 export const sections: Record<Language, SectionData[]> = {
   mk: [
-    { 
-      id: 'hero', 
+    {
+      id: 'hero',
       subtitle: <SectionBadge label="SINCE 2016" />,
-      title: "М&М Медиа",
-      content: "Медиумски и технолошки партнер за одржлив дигитален развој. Градиме решенија кои инспирираат и траат.",
+      title: "М&М Медиа,",
+      content: "Медијален и технолошки партнер за одржлив дигитален раст. Градиме решенија што инспирираат и трајаат.",
       showButton: true,
-      buttonText: 'Започнете проект',
+      buttonText: 'Започни проект',
       backgroundImage: 'https://storage.googleapis.com/mmmedia-assets/Slide%201.jpg'
     },
-    { 
-      id: 'about', 
+    {
+      id: 'about',
       subtitle: <SectionBadge label="IDENTITY_ENGINE" />,
-      title: 'За Нас', 
-      content: 'М&М Медиа е медиумска и дигитална компанија со седиште во Гостивар, активна од 2016 година. Управуваме со сопствени информативни платформи и развиваме дигитални, технолошки и AI решенија за медиуми, институции и компании.',
-      backgroundImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1920&q=80'
+      title: 'За нас',
+      content: 'М&М медиа е медијална и дигитална компанија базирана во Гостивар, активна од 2016 година. Управуваме со сопствени вестински платформи и развиваме дигитални, технолошки и AI решенија.',
+      backgroundImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea4d58f?auto=format&fit=crop&w=1920&q=80'
     },
-    { 
-      id: 'expertise', 
-      title: 'Сервиси и решенија',
+    {
+      id: 'expertise',
+      title: 'Услуги и решенија',
       items: [
-        { 
-          title: "Медиуми", 
+        {
+          title: "Медиа",
           icon: Radio,
-          description: "Јавно информирање засновано на кредибилитет и јавен интерес, со масовен досег и ефикасна дистрибуција на содржини преку дигитални платформи и медиумски канали." 
+          description: "Јавна информирања базирана на веродостојност и јавен интерес, со массовен достап и ефикасна дистрибуција на содржини преку дигиталните платформи и медиумски канали."
         },
-        { 
-          title: "Новинарство", 
+        {
+          title: "Новинарство",
           icon: Newspaper,
-          description: "Професионално и одговорно известување врз основа на проверени информации, борба против дезинформации, јакнење на јавната одговорност и спроведување обуки за новинарство и дигитална писменост." 
+          description: "Професионално и одговорно известување базирано на проверени информации, борба против дезинформации, јачање на јавната одговорност и спроведување обука за новинарство и дигитална писменост."
         },
-        { 
-          title: "AI решенија", 
+        {
+          title: "AI Решенија",
           icon: Sparkles,
-          description: "Имплементација на напредни технологии базирани на вештачка интелигенција и развој на практични AI алатки за компании и бизниси, насочени кон автоматизација, оптимизација и зголемување на продуктивноста." 
+          description: "Имплементација на напредни технологии базирани на вештачка интелигенција и развој на практични AI алатки за компании и деловни субјекти, насочени кон автоматизација, оптимизација и зголемување на продуктивност."
         },
-        { 
-          title: "Веб развој", 
+        {
+          title: "Веб развој",
           icon: Code2,
-          description: "Развој на функционални, скалабилни и одржливи веб платформи и медиумски системи, прилагодени на реални деловни, информативни и комуникациски потреби." 
+          description: "Развој на функционални, скалабилни и одржливи веб платформи и медиумски системи, прилагодени на вистински деловни, информациски и комуникациски потреби."
         },
-        { 
-          title: "Фотографија", 
+        {
+          title: "Фотографија",
           icon: Camera,
-          description: "Професионални фоторепортажи и документарна фотографија, вклучително и работа во сложени и чувствителни опкружувања." 
+          description: "Професионални фото-есеи и документарна фотографија, вклучувајќи работа во комплексни и осетливи окружувања."
         }
       ],
-      backgroundImage: 'https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1920&q=80'
+      backgroundImage: 'https://images.unsplash.com/photo-1557768633-15bb62ab2d0c?auto=format&fit=crop&w=1920&q=80'
     },
-    { 
-      id: 'contact', 
+    {
+      id: 'contact',
       title: 'Контакт',
       backgroundImage: 'https://storage.googleapis.com/mmmedia-assets/contact1-bg.webp'
     },
   ],
   en: [
-    { 
-      id: 'hero', 
+    {
+      id: 'hero',
       subtitle: <SectionBadge label="SINCE 2016" />,
       title: "M&M Media",
       content: "Media and technology partner for sustainable digital growth. We build solutions that inspire and last.",
@@ -87,47 +87,47 @@ export const sections: Record<Language, SectionData[]> = {
       buttonText: 'Start project',
       backgroundImage: 'https://storage.googleapis.com/mmmedia-assets/Slide%201.jpg'
     },
-    { 
-      id: 'about', 
+    {
+      id: 'about',
       subtitle: <SectionBadge label="IDENTITY_ENGINE" />,
-      title: 'About Us', 
+      title: 'About Us',
       content: 'M&M Media is a media and digital company based in Gostivar, active since 2016. We manage our own news platforms and develop digital, technology, and AI solutions.',
-      backgroundImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1920&q=80'
+      backgroundImage: 'https://images.unsplash.com/photo-1497215728101-856f4ea4d58f?auto=format&fit=crop&w=1920&q=80'
     },
-    { 
-      id: 'expertise', 
+    {
+      id: 'expertise',
       title: 'Services & Solutions',
       items: [
-        { 
-          title: "Media", 
+        {
+          title: "Media",
           icon: Radio,
-          description: "Public information based on credibility and public interest, with mass reach and efficient content distribution through digital platforms and media channels." 
+          description: "Public information based on credibility and public interest, with mass reach and efficient content distribution through digital platforms and media channels."
         },
-        { 
-          title: "Journalism", 
+        {
+          title: "Journalism",
           icon: Newspaper,
-          description: "Professional and responsible reporting based on verified information, fighting disinformation, strengthening public accountability, and conducting training for journalism and digital literacy." 
+          description: "Professional and responsible reporting based on verified information, fighting disinformation, strengthening public accountability, and conducting training for journalism and digital literacy."
         },
-        { 
-          title: "AI Solutions", 
+        {
+          title: "AI Solutions",
           icon: Sparkles,
-          description: "Implementation of advanced technologies based on artificial intelligence and development of practical AI tools for companies and businesses, aimed at automation, optimization, and increasing productivity." 
+          description: "Implementation of advanced technologies based on artificial intelligence and development of practical AI tools for companies and businesses, aimed at automation, optimization, and increasing productivity."
         },
-        { 
-          title: "Web Development", 
+        {
+          title: "Web Development",
           icon: Code2,
-          description: "Development of functional, scalable, and sustainable web platforms and media systems, tailored to real business, informational, and communication needs." 
+          description: "Development of functional, scalable, and sustainable web platforms and media systems, tailored to real business, informational, and communication needs."
         },
-        { 
-          title: "Photography", 
+        {
+          title: "Photography",
           icon: Camera,
-          description: "Professional photo-essays and documentary photography, including work in complex and sensitive environments." 
+          description: "Professional photo-essays and documentary photography, including work in complex and sensitive environments."
         }
       ],
-      backgroundImage: 'https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&w=1920&q=80'
+      backgroundImage: 'https://images.unsplash.com/photo-1557768633-15bb62ab2d0c?auto=format&fit=crop&w=1920&q=80'
     },
-    { 
-      id: 'contact', 
+    {
+      id: 'contact',
       title: 'Contact',
       backgroundImage: 'https://storage.googleapis.com/mmmedia-assets/contact1-bg.webp'
     },

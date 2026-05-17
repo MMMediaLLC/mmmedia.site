@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Section from './components/Section';
@@ -17,10 +16,8 @@ export default function LandingPage() {
   const currentSections = sections[language];
 
   useEffect(() => {
-    // Update language attribute on HTML root
     document.documentElement.lang = language;
 
-    // Build SEO content based on the 2nd (about) and 3rd (expertise) slides
     const currentAbout = currentSections.find(s => s.id === 'about');
     const currentExpertise = currentSections.find(s => s.id === 'expertise');
     const expertiseTitles = currentExpertise?.items?.map(item => item.title).join(', ') || '';
@@ -39,10 +36,8 @@ export default function LandingPage() {
       ogTitle = 'M&M Media | Digital Excellence';
     }
 
-    // Update document title
     document.title = title;
 
-    // Helper to safely update meta tags
     const updateMeta = (name: string, content: string, isProperty = false) => {
       const selector = isProperty ? `meta[property="${name}"]` : `meta[name="${name}"]`;
       let element = document.querySelector(selector);
@@ -60,10 +55,9 @@ export default function LandingPage() {
 
     updateMeta('description', description);
     updateMeta('keywords', keywords);
-    updateMeta('og:title', ogTitle);
-    updateMeta('og:description', description);
-    updateMeta('og:locale', language === 'mk' ? 'mk_MK' : 'en_US');
-
+    updateMeta('og:title', ogTitle, true);
+    updateMeta('og:description', description, true);
+    updateMeta('og:locale', language === 'mk' ? 'mk_MK' : 'en_US', true);
   }, [language, currentSections]);
 
   useEffect(() => {
@@ -86,7 +80,7 @@ export default function LandingPage() {
     const observer = new IntersectionObserver(observerCallback, observerOptions);
     sectionRefs.current.forEach((ref) => { if (ref) observer.observe(ref); });
 
-    return () => { 
+    return () => {
       sectionRefs.current.forEach((ref) => { if (ref) observer.unobserve(ref); });
     };
   }, [language]);
@@ -109,7 +103,7 @@ export default function LandingPage() {
 
   return (
     <Layout>
-      <motion.header 
+      <motion.header
         initial={false}
         animate={{
           backgroundColor: isAtTop ? 'rgba(2, 2, 2, 0)' : 'rgba(2, 2, 2, 0.92)',
@@ -131,7 +125,7 @@ export default function LandingPage() {
           </motion.button>
         </div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.02 }}
@@ -143,18 +137,16 @@ export default function LandingPage() {
           </span>
         </motion.div>
 
-        {/* Removed About/Services links from right side */}
         <div className="flex-1 flex justify-end" />
       </motion.header>
 
-      {/* Advanced NavRail - Labels Removed */}
       <nav className="fixed right-6 md:right-12 top-1/2 -translate-y-1/2 flex flex-col items-center gap-8 z-50">
         <div className="absolute top-[-20px] bottom-[-20px] w-[1px] bg-gradient-to-b from-transparent via-white/10 to-transparent -z-10" />
-        
+
         {currentSections.map((_, index) => {
           const isActive = index === activeSection;
           const isHovered = hoveredNav === index;
-          
+
           return (
             <div key={index} className="relative flex items-center justify-center">
               <button
@@ -171,16 +163,12 @@ export default function LandingPage() {
                     backgroundColor: isActive ? '#3b82f6' : (isHovered ? 'rgba(255,255,255,0.6)' : 'rgba(255,255,255,0.2)'),
                     boxShadow: isActive ? '0 0 15px rgba(59,130,246,0.8)' : 'none',
                   }}
-                  transition={{ 
-                    type: "spring", 
-                    stiffness: 300, 
-                    damping: 25 
-                  }}
+                  transition={{ type: "spring", stiffness: 300, damping: 25 }}
                   className="rounded-full relative z-10"
                 />
 
                 {isActive && (
-                  <motion.div 
+                  <motion.div
                     initial={{ scale: 0.5, opacity: 0 }}
                     animate={{ scale: [1, 2.5, 1], opacity: [0, 0.3, 0] }}
                     transition={{ duration: 3, repeat: Infinity }}
@@ -195,8 +183,8 @@ export default function LandingPage() {
 
       <div ref={containerRef} className="snap-container no-scrollbar">
         {currentSections.map((section, index) => (
-          <div 
-            key={`${section.id}-${language}`} 
+          <div
+            key={`${section.id}-${language}`}
             ref={(el) => { sectionRefs.current[index] = el; }}
             className="snap-child"
           >
