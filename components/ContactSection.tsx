@@ -68,7 +68,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isActive, language }) =
           {isLoaded && (
             <motion.div
               initial={{ opacity: 0 }}
-              animate={isActive ? { opacity: 0.85 } : { opacity: 0 }}
+              animate={isActive ? { opacity: 0.75 } : { opacity: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
               className="absolute inset-0 z-0 bg-cover bg-center brightness-[0.65]"
