@@ -68,10 +68,10 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isActive, language }) =
           {isLoaded && (
             <motion.div
               initial={{ opacity: 0 }}
-              animate={isActive ? { opacity: 0.6 } : { opacity: 0 }}
+              animate={isActive ? { opacity: 0.85 } : { opacity: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="absolute inset-0 z-0 bg-cover bg-center brightness-[0.5]"
+              className="absolute inset-0 z-0 bg-cover bg-center brightness-[0.65]"
               style={{ backgroundImage: `url(${backgroundImage})` }}
             />
           )}
@@ -80,8 +80,8 @@ const ContactSection: React.FC<ContactSectionProps> = ({ isActive, language }) =
         <ScanningLine active={isActive} />
 
         <div className="absolute inset-0 z-[3] pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-surface via-transparent to-surface opacity-95" />
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-surface via-surface/40 to-transparent" />
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-surface via-transparent to-surface opacity-70" />
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-surface via-surface/20 to-transparent" />
         </div>
       </div>
 
