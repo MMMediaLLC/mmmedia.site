@@ -69,9 +69,9 @@ export const sections: Record<Language, SectionData[]> = {
           description: "Професионални фото-репортажи и документарна фотографија, вклучувајќи работа во комплексни и чуствителни окружувања."
         },
         {
-          title: "UAV и Дрон операции",
+          title: "UAV операции",
           icon: Crosshair,
-          description: "Напредни UAV и дрон операции за воздушна фотографија и видео, инспекција на инфраструктура, мапирање, техничка и визуелна документација, FPV fly-through снимки и поддршка при пребарување и спасување."
+          description: "Професионални UAV и дрон операции за воздушна фотографија, видео, инспекција на инфраструктура, мапирање, техничка документација, FPV fly-through снимки и поддршка при пребарување и спасување."
         }
       ],
       backgroundImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80'
@@ -129,9 +129,9 @@ export const sections: Record<Language, SectionData[]> = {
           description: "Professional photo reports and documentary photography, including work in complex and sensitive environments."
         },
         {
-          title: "UAV & Drone Operations",
+          title: "UAV Operations",
           icon: Crosshair,
-          description: "Professional UAV and drone operations for aerial photography and video, infrastructure inspections, mapping, technical and visual documentation, FPV fly-through footage, and search and rescue support."
+          description: "Professional UAV and drone operations for aerial photography, video, infrastructure inspections, mapping, technical documentation, FPV fly-through footage, and search and rescue support."
         }
       ],
       backgroundImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80'
