@@ -61,7 +61,7 @@ export const sections: Record<Language, SectionData[]> = {
         {
           title: "Веб развој",
           icon: Code2,
-          description: "Развој на функционални, скалабилни и одржливи веб платформи, медиумски системи и дигитални решенија прилагодени на реални потреби."
+          description: "Развој на скалабилни веб платформи и дигитални решенија прилагодени на реални потреби."
         },
         {
           title: "Фотографија",
@@ -121,7 +121,7 @@ export const sections: Record<Language, SectionData[]> = {
         {
           title: "Web Development",
           icon: Code2,
-          description: "Development of functional, scalable, and sustainable web platforms, media systems, and digital solutions tailored to real needs."
+          description: "Development of scalable web platforms and digital solutions tailored to real needs."
         },
         {
           title: "Photography",
