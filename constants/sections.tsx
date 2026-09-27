@@ -26,7 +26,7 @@ export const sections: Record<Language, SectionData[]> = {
     {
       id: 'hero',
       subtitle: <SectionBadge label="SINCE 2016" />,
-      title: "М&М Медиа,",
+      title: "М&М Медиа",
       content: "Медиумски и технолошки партнер за развој на современи дигитални решенија. Градиме платформи, содржини и AI алатки со реална примена и долгорочна вредност.",
       showButton: true,
       buttonText: 'Започни проект',
@@ -56,7 +56,7 @@ export const sections: Record<Language, SectionData[]> = {
         {
           title: "AI решенија",
           icon: Sparkles,
-          description: "Развој и имплементација на практични алатки базирани на вештачка интелигенција за автоматизација, оптимизација на процеси и зголемување на продуктивноста кај компании и организации."
+          description: "Развој и имплементација на AI алатки за автоматизација, оптимизација на процеси и зголемување на продуктивноста кај компании и организации."
         },
         {
           title: "Веб развој",
@@ -116,7 +116,7 @@ export const sections: Record<Language, SectionData[]> = {
         {
           title: "AI Solutions",
           icon: Sparkles,
-          description: "Development and implementation of practical AI-based tools for automation, process optimization, and increased productivity for companies and organizations."
+          description: "Development and implementation of AI tools for automation, process optimization, and increased productivity for companies and organizations."
         },
         {
           title: "Web Development",
